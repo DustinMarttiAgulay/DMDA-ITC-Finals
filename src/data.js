@@ -33,10 +33,17 @@ export const about = {
   paragraphs: [
     "I am a student learning programming and web development.",
     "My hobbies include drawing, watching shows, exercising, and using social media.",
+    "I am currently learning programming and web development through online resources and tutorials. I am also taking a course in web development at my school.",
+    "I hope to become a skilled programmer and web developer in the future.",
+    "I like to play video games. Roblox and Minecraft",
+    "I like writing my opinions about different topics on social media.",
+    "I really like to draw"
+
+
   ],
   facts: [
     { label: "Lives in", value: "Bacoor, Cavite" },
-    { label: "Currently", value: "Currently working on this project" },
+    { label: "Currently", value: "Currently a Freshman in Adamson University" },
     { label: "Interests", value: "Drawing and making websites" },
   ],
 };

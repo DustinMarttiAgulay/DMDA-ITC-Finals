@@ -109,6 +109,7 @@ footer {
 section {
   max-width: 62rem;
   padding: 4.5rem 0 1rem;
+  margin: 0 auto;
 }
 
 .hero {

@@ -3,7 +3,7 @@ export const profile = {
   tagline: "I can program and make websites",
   intro: "Hello I am Dustin. I am a student at Adamson University. I am currently learning programming and web development.",
   context: "I want to learn programming and web development so that I can make websites and applications. I heard that there are many job opportunities in this field, so I want to learn it to have a career in the future. It is a hard field to learn, but I am willing to put in the effort to learn it. I am currently learning programming and web development through online resources and tutorials. I am also taking a course in web development at my school. I hope to become a skilled programmer and web developer in the future.",
-  photo: "src/assets/images/dustin.PNG", 
+  photo: "src/assets/images/dustin1.png", 
 };
 
 export const education = [

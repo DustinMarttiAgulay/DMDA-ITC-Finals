@@ -1,8 +1,14 @@
 import dustin from "./assets/images/dustin1.png";
+import aboutme1 from "./assets/images/aboutme1.png";
+import aboutme2 from "./assets/images/aboutme2.png";
+import aboutme3 from "./assets/images/aboutme3.png";
+import aboutme4 from "./assets/images/aboutme4.png";
+import aboutme5 from "./assets/images/aboutme5.png";
+import aboutme6 from "./assets/images/aboutme6.png";
 
 export const profile = {
   name: "Dustin Martti D. Agulay",
-  tagline: "I can program and make websites",
+  tagline: "I am a student who's currently learning programming and web development.",
   intro: "Hello I am Dustin. I am a student at Adamson University. I am currently learning programming and web development.",
   context: "I want to learn programming and web development so that I can make websites and applications. I heard that there are many job opportunities in this field, so I want to learn it to have a career in the future. It is a hard field to learn, but I am willing to put in the effort to learn it. I am currently learning programming and web development through online resources and tutorials. I am also taking a course in web development at my school. I hope to become a skilled programmer and web developer in the future.",
   photo: dustin, 
@@ -13,16 +19,16 @@ export const education = [
     school: "Adamson University",
     program: "BSIT",
     years: "1st Year",
-    details: "Currently studying for a degree in Information Technology. I am learning programming and web development.",
+    details: "Currently studying for a degree in Information Technology. I am still learning programming and web development.",
   },
   {
-    school: "STI",
+    school: "STI College Las Pinas",
     program: "ITMAWD",
     years: "2024 – 2026",
     details: "Did some basic programming and web development",
   },
   {
-    school: "SALIS",
+    school: "Saint Alphonsus Liguori Integrated School",
     program: "Grade School",
     years: "2020 – 2024",
     details: "High School",
@@ -31,15 +37,12 @@ export const education = [
 
 export const about = {
   paragraphs: [
-    "I am a student learning programming and web development.",
-    "My hobbies include drawing, watching shows, exercising, and using social media.",
-    "I am currently learning programming and web development through online resources and tutorials. I am also taking a course in web development at my school.",
-    "I hope to become a skilled programmer and web developer in the future.",
-    "I like to play video games. Roblox and Minecraft",
-    "I like writing my opinions about different topics on social media.",
-    "I really like to draw"
-
-
+    { statement: "I am a student learning programming and web development. (This will probably be my posture in a few years)", image: aboutme1 },
+    { statement: "My hobbies include drawing, watching shows, exercising, and using social media.", image: aboutme2 },
+    { statement: "I am currently learning programming and web development through online resources and tutorials. I am also taking a course in web development at my school.", image: aboutme3 },
+    { statement: "I hope to become a skilled programmer and web developer in the future.", image: aboutme4 },
+    { statement: "I like to play video games. Roblox and Minecraft", image: aboutme5 },
+    { statement: "I like writing my opinions about different topics from social media.", image: aboutme6 },
   ],
   facts: [
     { label: "Lives in", value: "Bacoor, Cavite" },

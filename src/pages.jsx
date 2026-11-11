@@ -36,7 +36,12 @@ export function About() {
     <section className="page">
       <h1>About Me</h1>
       <div className="about">
-        <div>{about.paragraphs.map((p, i) => <p key={i}>{p}</p>)}</div>
+        <div>{about.paragraphs.map((p) => (
+          <div key={p.statement}>
+            <p>{p.statement}</p>
+            {p.image && <img src={p.image} alt="About me" />}
+          </div>
+        ))}</div>
         <dl>
           {about.facts.map((f) => (
             <div key={f.label}><dt>{f.label}</dt><dd>{f.value}</dd></div>

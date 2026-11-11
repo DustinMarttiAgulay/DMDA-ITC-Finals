@@ -6,8 +6,8 @@ import { Home, Education, About, Skills } from "./pages.jsx";
 // Each item is its own page. Contact is not a page: it scrolls to the footer.
 const pages = [
   { to: "/", label: "Home", end: true },
-  { to: "/education", label: "Educational Background" },
   { to: "/about", label: "About Me" },
+  { to: "/education", label: "Educational Background" },
   { to: "/skills", label: "Skills" },
 ];
 
@@ -22,7 +22,7 @@ export default function App() {
     <>
       <ScrollToTop />
       <header className="bar">
-        <Link className="brand" to="/">{profile.name}</Link>
+        <Link className="brand" to="/">{profile.name} - Finals Project</Link>
         <nav aria-label="Main">
           <ul>
             {pages.map((p) => (
@@ -36,8 +36,8 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/education" element={<Education />} />
           <Route path="/about" element={<About />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="*" element={<Home />} />
         </Routes>

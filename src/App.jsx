@@ -44,6 +44,7 @@ export default function App() {
       </main>
 
       <footer id="contact">
+        <div className="contact-flex">
         <h2>Contact</h2>
         <p>{contact.message}</p>
         <p><a className="mail" href={`mailto:${contact.email}`}>{contact.email}</a></p>
@@ -53,6 +54,34 @@ export default function App() {
           ))}
         </ul>
         <small>© {new Date().getFullYear()} {profile.name}</small>
+        </div>
+        
+        <div className="contact-flex">
+          <h2>Contact Form</h2>
+          <p>If you want to contact me, please fill out the form below:</p>
+          <form action="" method="POST">
+            <div className="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="name" placeholder="Jane Doe" required />
+            </div>
+            <div className="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div className="form-group">
+              <label for="topic">Reason for Contact</label>
+              <select id="topic" name="topic" required>
+                <option value="" disabled selected>Select an option...</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div className="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </footer>
     </>
   );

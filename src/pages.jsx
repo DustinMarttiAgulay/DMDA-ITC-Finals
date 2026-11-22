@@ -1,5 +1,6 @@
 import { profile, education, about, skills } from "./data.js";
 
+
 export function Home() {
   return (
     <section className="hero">
@@ -10,7 +11,20 @@ export function Home() {
         <p className="lead">{profile.context}</p>
       </div>
       {profile.photo && <img src={profile.photo} alt={`Portrait of ${profile.name}`} />}
+      <div>
+        <h3>My Voice</h3>
+        <audio controls>
+          <source src="./src/assets/media/VoiceRecord.mp3" type="audio/mpeg"/>
+            Your browser does not support the audio element.
+        </audio>
+        <h3>My Video</h3>
+        <video controls width="200" height="150">
+          <source src="./src/assets/media/Dustin1.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
+
   );
 }
 
@@ -60,7 +74,7 @@ export function Skills() {
         {skills.map((s) => (
           <div key={s.group}>
             <h3>{s.group}</h3>
-            <ul>{s.items.map((i) => 
+            <ul>{s.items.map((i) =>
               <li key={i}>{i}</li>)}
             </ul>
             <div className="skills-description">

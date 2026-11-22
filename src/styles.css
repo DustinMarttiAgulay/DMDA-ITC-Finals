@@ -255,6 +255,9 @@ footer {
   padding-bottom: 2.5rem;
   background: var(--ink);
   color: var(--paper);
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
 }
 
 footer h2 {
@@ -292,7 +295,6 @@ footer small {
   }
 }
 
-/* Multi-page layout: footer stays at the bottom, even on short pages */
 #root {
   min-height: 100vh;
   display: flex;
@@ -310,4 +312,15 @@ nav a.active {
 .page h1 {
   font-size: clamp(2.2rem, 6vw, 3.5rem);
   margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 30rem;
+}
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
 }

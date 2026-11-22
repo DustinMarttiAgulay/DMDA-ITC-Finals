@@ -37,12 +37,12 @@ export const education = [
 
 export const about = {
   paragraphs: [
-    { statement: "I am a student learning programming and web development. (This will probably be my posture in a few years)", image: aboutme1 },
-    { statement: "My hobbies include drawing, watching shows, exercising, and using social media.", image: aboutme2 },
-    { statement: "I am currently learning programming and web development through online resources and tutorials. I am also taking a course in web development at my school.", image: aboutme3 },
-    { statement: "I hope to become a skilled programmer and web developer in the future.", image: aboutme4 },
-    { statement: "I like to play video games. Roblox and Minecraft", image: aboutme5 },
-    { statement: "I like writing my opinions about different topics from social media.", image: aboutme6 },
+    { statement: "I am a student learning programming and web development. (This will probably be my posture in a few years)", image: aboutme1 , figcaption: "Figure 1: This is a cat" },
+    { statement: "My hobbies include drawing, watching shows, exercising, and using social media.", image: aboutme2 , figcaption: "Figure 2: This is my drawing from ms paint" },
+    { statement: "I am currently learning programming and web development through online resources and tutorials. I am also taking a course in web development at my school.", image: aboutme3 , figcaption: "Figure 3: Ishowspeed" },
+    { statement: "I hope to become a skilled programmer and web developer in the future.", image: aboutme4 , figcaption: "Figure 4: A guy with blue eyes" },
+    { statement: "I like to play video games. Roblox and Minecraft", image: aboutme5 , figcaption: "Figure 5: A movie poster about a movie that I've never seen before" },
+    { statement: "I like writing my opinions about different topics from social media.", image: aboutme6 , figcaption: "Figure 6: Jaden Smith" },
   ],
   facts: [
     { label: "Lives in", value: "Bacoor, Cavite" },

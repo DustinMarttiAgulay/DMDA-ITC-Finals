@@ -1,5 +1,6 @@
 import { profile, education, about, skills } from "./data.js";
-
+import myVideo from './assets/media/Dustin1.mp4';
+import myAudio from './assets/media/VoiceRecord.mp3';
 
 export function Home() {
   return (
@@ -14,12 +15,12 @@ export function Home() {
       <div>
         <h3>My Voice</h3>
         <audio controls>
-          <source src="./src/assets/media/VoiceRecord.mp3" type="audio/mpeg"/>
+          <source src={myAudio} type="audio/mpeg"/>
             Your browser does not support the audio element.
         </audio>
         <h3>My Video</h3>
         <video controls width="200" height="150">
-          <source src="./src/assets/media/Dustin1.mp4" type="video/mp4"/>
+          <source src={myVideo} type="video/mp4"/>
             Your browser does not support the video tag.
         </video>
       </div>
@@ -53,7 +54,10 @@ export function About() {
         <div>{about.paragraphs.map((p) => (
           <div key={p.statement}>
             <p>{p.statement}</p>
+            <figure>
             {p.image && <img src={p.image} alt="About me" />}
+            {p.figcaption && <figcaption>{p.figcaption}</figcaption>}
+            </figure>
           </div>
         ))}</div>
         <dl>
